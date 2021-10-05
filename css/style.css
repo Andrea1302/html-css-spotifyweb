@@ -65,7 +65,7 @@ footer{
 /* Navbar left  */
 
 #navbar_left{
-    padding: 0 5px;
+    padding: 0 10px;
     height: 100%;
 }
 #navbar_left .space_navbar_left{
@@ -102,7 +102,39 @@ footer{
         align-items: center;
     }
     #nav_top .padding_span{
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    /* Playlist  */
+    #playlist{
+        color: #ccc;
+        font-size: 10px;
+    }
+    #playlist h3{
+        margin-top: 40px;
+    }
+    #playlist #add_playlist{
+        display: flex;
+        align-items: center;
+    }
+    #playlist #add_playlist #add{
+        background-color: #ccc;
+    }
+    #playlist #add_playlist #add #aggiungi{
+        color: #000;
+    }
+    #add a{
+        display: inline-block;
+        width: 100%;
+        padding: 10px ;
+    }
+    #crea{
+        font-weight: bold;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .space_playlist{
+        margin: 20px 0;
     }
 
 
@@ -152,5 +184,8 @@ footer{
     #nav_top .icon_navbar{
         width: 100%;
         height: auto;
+    }
+    #playlist{
+        display: none;
     }
 }
