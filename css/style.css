@@ -65,14 +65,11 @@ footer{
 /* Navbar left  */
 
 #navbar_left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 0 5px;
     height: 100%;
 }
-#navbar_left .padding_navbar_left{
-    margin:10px 0 ;
+#navbar_left .space_navbar_left{
+    margin:20px 0 ;
 }
 
     /* logo  */
@@ -87,17 +84,25 @@ footer{
             display: none;
         }
     /* Search home library  */
+    #container_top{
+        height:90% ;
+    }
     #nav_top .icon_navbar{
         width: 20%;
         height: auto;
     }
     #nav_top li{
         width: 100%;
+        margin: 5px 0;
     }
     #nav_top a {
         text-decoration: none;
-        width: 100%;
+        display: flex;
         color: #ccc;
+        align-items: center;
+    }
+    #nav_top .padding_span{
+        font-size: 12px;
     }
 
 
@@ -139,5 +144,13 @@ footer{
         width: 100%;
         height: auto;
         display: inline-block;
+    }
+
+    #nav_top .padding_span{
+        display: none;
+    }
+    #nav_top .icon_navbar{
+        width: 100%;
+        height: auto;
     }
 }
