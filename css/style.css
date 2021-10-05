@@ -41,6 +41,8 @@ main{
     height: 100px;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
+    /* debug */
+    color: white ;
 }
 #principal_section{
     overflow-y: auto;
@@ -48,10 +50,77 @@ main{
     color: white;
 }
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100px;
     background-color: rgb(26, 25, 25) ;
 }
+
+
+
+
+/* Inizio dettagli  */
+/* Navbar left  */
+
+#navbar_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px;
+    height: 100%;
+}
+#navbar_left .padding_navbar_left{
+    margin:10px 0 ;
+}
+
+    /* logo  */
+    #logo_spotify img{
+        width: 70%;
+        height: auto;
+    }
+        /* logo none  */
+        #logo_spotify #logo_on_smartphone{
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+    /* Search home library  */
+    #nav_top .icon_navbar{
+        width: 20%;
+        height: auto;
+    }
+    #nav_top li{
+        width: 100%;
+    }
+    #nav_top a {
+        text-decoration: none;
+        width: 100%;
+        color: #ccc;
+    }
+
+
+
+
+
+
+
+
+
+    /* User download  */
+    #navbar_left #user_download{
+        /* debug */
+        height: 100px;
+        background-color: yellow;
+    }
+
+
+
+
+
+
+
 
 /* Mediaquery telefono */
 @media all and (max-width:380px){
@@ -59,6 +128,16 @@ footer{
         width: 50px;
     }
     #central{
-        width: calc(100% - 50px);
+        width: calc(100% - 50px);   
+    }
+
+    /* navbarleft  */
+    #logo_spotify img{
+        display: none;
+    }
+    #logo_spotify #logo_on_smartphone{
+        width: 100%;
+        height: auto;
+        display: inline-block;
     }
 }
