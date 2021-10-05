@@ -28,8 +28,6 @@ main{
     background-color: black;
     height: 100%;
     float: left;
-    /* debug  */
-    color: white;
 }
 #central {
     width: calc(100% - 200px );
@@ -67,6 +65,9 @@ footer{
 #navbar_left{
     padding: 0 10px;
     height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;  */
 }
 #navbar_left .space_navbar_left{
     margin:20px 0 ;
@@ -86,6 +87,7 @@ footer{
     /* Search home library  */
     #container_top{
         height:90% ;
+        overflow-y: scroll;
     }
     #nav_top .icon_navbar{
         width: 20%;
@@ -102,16 +104,17 @@ footer{
         align-items: center;
     }
     #nav_top .padding_span{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     /* Playlist  */
     #playlist{
         color: #ccc;
-        font-size: 10px;
+        font-size: 14px;
     }
     #playlist h3{
         margin-top: 40px;
+        color: white;
     }
     #playlist #add_playlist{
         display: flex;
@@ -137,19 +140,30 @@ footer{
         margin: 20px 0;
     }
 
+    /* User e download  */
+    #user_download{
+        color: #ccc;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc ;
+        padding-bottom: 5px;
+    }
+    #user_download img {
+        width: 14px;
+        height: auto;
+        margin-right: 5px;
+    }
 
-
-
-
-
-
-
-
-    /* User download  */
-    #navbar_left #user_download{
-        /* debug */
-        height: 100px;
-        background-color: yellow;
+    #user #usericon{
+        width: 25px;
+        height: auto;
+        margin-right: 5px;
+    }
+    #footer_navbar_left{
+        position: fixed;
+        bottom: 100px;
+        left: 10px;
     }
 
 
@@ -188,4 +202,12 @@ footer{
     #playlist{
         display: none;
     }
-}
+
+    .after_img{
+        display: none;
+    }
+    #user_download img{
+        width: 100%;
+        height: auto;
+    }
+}    
