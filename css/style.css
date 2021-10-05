@@ -1,0 +1,43 @@
+/* Regole Generali  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,400&display=swap');
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+/* clearfix  */
+.clearfix{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+/* Regole di debug  */
+main{
+    height: calc(100vh - 100px);
+    width:100%;
+}
+#navbar_left{
+    width: 200px;
+    background-color: black;
+    height: 100%;
+    float: left;
+}
+#central {
+    width: calc(100% - 200px );
+    background-color: rgb(15, 12, 27);
+    height: 100%;
+    float:left;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(26, 25, 25) ;
+}
