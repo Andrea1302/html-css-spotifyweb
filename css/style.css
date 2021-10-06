@@ -139,12 +139,15 @@ footer{
     /* User e download  */
     #user_download{
         background-color: black;
-        color: grey;
         font-size: 14px;
-        display: flex;
-        align-items: center;
         border-bottom: 1px solid grey ;
         padding-bottom: 5px;
+    }
+    #user_download a{
+        display: flex;
+        align-items: center;
+        color: grey;
+        text-decoration: none;
     }
     #user_download img {
         width: 14px;
@@ -162,9 +165,11 @@ footer{
     #footer_navbar_left{
         background-color: black;
     }
-    #user{
+    
+    #user a{
         display: flex;
         align-items: center;
+        text-decoration: none;
     }
     #after_img{
         color: white;
@@ -268,6 +273,21 @@ footer{
     }
 
     /* Hover  */
+    /* hover li  */
+    .hover_all:hover{
+        color: white;
+    }
+
+    /* hover upgrade  */
+    #top_upgrade a:hover{
+        zoom: 120%;
+    }
+
+    #navbar_central li a:hover{
+        color: white;
+    }
+
+    /* hover immagini */
     .hover{
         position: relative;
     }
