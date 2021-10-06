@@ -335,10 +335,16 @@ footer{
         float: left;
         width: 20%;
         height: 100%;
-
-        /* debug  */
-        background-color: rgb(173, 255, 105);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
     }
+    #footer_right a{
+        display: inline-block;
+        color: white;
+    }
+
 
 
 
