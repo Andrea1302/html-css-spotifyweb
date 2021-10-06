@@ -94,7 +94,7 @@ footer{
     #nav_top a {
         text-decoration: none;
         display: flex;
-        color: #ccc;
+        color: grey;
         align-items: center;
     }
     #nav_top .padding_span{
@@ -103,7 +103,7 @@ footer{
 
     /* Playlist  */
     #playlist{
-        color: #ccc;
+        color:grey;
         font-size: 14px;
         height: 60%;
         overflow-y: auto;
@@ -117,7 +117,7 @@ footer{
         align-items: center;
     }
     #playlist #add_playlist #add{
-        background-color: #ccc;
+        background-color: grey;
     }
     #playlist #add_playlist #add #aggiungi{
         color: #000;
@@ -139,11 +139,11 @@ footer{
     /* User e download  */
     #user_download{
         background-color: black;
-        color: #ccc;
+        color: grey;
         font-size: 14px;
         display: flex;
         align-items: center;
-        border-bottom: 1px solid #ccc ;
+        border-bottom: 1px solid grey ;
         padding-bottom: 5px;
     }
     #user_download img {
@@ -156,9 +156,19 @@ footer{
         width: 25px;
         height: auto;
         margin-right: 5px;
+        background-color: grey;
+        border-radius: 50%;
     }
     #footer_navbar_left{
         background-color: black;
+    }
+    #user{
+        display: flex;
+        align-items: center;
+    }
+    #after_img{
+        color: white;
+        font-size: 14px;
     }
 
     /* Central top upgrade  */
@@ -199,7 +209,7 @@ footer{
         margin: 0 10px;
     }
     #navbar_central li a {
-        color: #ccc;
+        color: grey;
         text-decoration: none;
         font-size: 14px;
     }
@@ -207,13 +217,21 @@ footer{
 
 
     /* Principal section  */
-
+    .group .music a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+    }
     #principal_section h2{
         margin-top: 20px;
     }
 
     .group{
         width: calc(100% / 6); 
+    }
+    .group .music{
+        width: 100%;
+        height: 100%;
     }
     .container_music{
         margin-top: 20px;
@@ -230,12 +248,42 @@ footer{
         margin-bottom: 10px;
     }
     .music span{
-        color: #ccc;
+        color: grey;
     }
     .container_music .music{
         text-align: center;
     }
+    
+    /* Creato per  */
+    #sottoh2{
+        display: inline-block;
+        margin-top: 10px;
+        color: grey;
+        font-size: 14px;
+    }
 
+    /* Artisti popolari  */
+    .group .popolari img{
+        border-radius: 50%;
+    }
+
+    /* Hover  */
+    .hover{
+        position: relative;
+    }
+    .player_hover{
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .hover:hover .player_hover{
+        display: inline-block;
+    }
+
+    
 
 
 
