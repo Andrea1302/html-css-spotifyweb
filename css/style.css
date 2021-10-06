@@ -272,6 +272,76 @@ footer{
         border-radius: 50%;
     }
 
+
+
+
+    /* Footer  */
+    #footer_left{
+        float: left;
+        width: 20%;
+        height: 100%;
+        color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    #footer_left img{
+        width: 20%;
+        height: auto;
+    }
+    #footer_left h3{
+        color: white;
+    }
+
+
+    #footer_central{
+        margin: 0 10%;
+        float: left;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   #selection_song{
+       padding: 0 180px;
+   } 
+    #footer_central a{
+        color: white;
+    }
+    #selection_song{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #minuto{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    #minuto .look_minute{
+        color: white;
+    }
+    #minuto input{
+        width: 80%;
+        color: grey;
+    }
+
+
+
+
+    #footer_right{
+        float: left;
+        width: 20%;
+        height: 100%;
+
+        /* debug  */
+        background-color: rgb(173, 255, 105);
+    }
+
+
+
     /* Hover  */
     /* hover li  */
     .hover_all:hover{
