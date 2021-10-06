@@ -12,7 +12,7 @@ body{
 }
 
 /* clearfix  */
-.clearfix{
+.clearfix::after{
     display: table;
     content: '';
     clear: both;
@@ -34,23 +34,21 @@ main{
     background-color: rgb(15, 12, 27);
     height: 100%;
     float:left;
-}
-#top_upgrade{
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    /* debug */
-    color: white ;
-}
-#principal_section{
     overflow-y: auto;
-    /* debug */
+}
+
+#principal_section{
     color: white;
 }
+
+
+
+
+/* Footer  */
 footer{
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     height: 100px;
     background-color: rgb(26, 25, 25) ;
@@ -64,10 +62,7 @@ footer{
 
 #navbar_left{
     padding: 0 10px;
-    height: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;  */
+    overflow-y: hidden;
 }
 #navbar_left .space_navbar_left{
     margin:20px 0 ;
@@ -87,7 +82,6 @@ footer{
     /* Search home library  */
     #container_top{
         height:90% ;
-        overflow-y: scroll;
     }
     #nav_top .icon_navbar{
         width: 20%;
@@ -111,6 +105,8 @@ footer{
     #playlist{
         color: #ccc;
         font-size: 14px;
+        height: 60%;
+        overflow-y: auto;
     }
     #playlist h3{
         margin-top: 40px;
@@ -142,6 +138,7 @@ footer{
 
     /* User e download  */
     #user_download{
+        background-color: black;
         color: #ccc;
         font-size: 14px;
         display: flex;
@@ -161,9 +158,82 @@ footer{
         margin-right: 5px;
     }
     #footer_navbar_left{
+        background-color: black;
+    }
+
+    /* Central top upgrade  */
+    #top_upgrade{
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        padding: 10px;
+        text-align: end;
         position: fixed;
-        bottom: 100px;
-        left: 10px;
+        top: 0;
+        left: 0;
+        color: white ;
+    }
+    #top_upgrade a{
+        text-decoration: none;
+        color: white;
+        padding: 5px 15px;
+        border: 1px solid white;
+        border-radius: 15px;
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+
+    /* Principal section  */
+
+    #principal_section{
+        padding: 20px;
+        margin-top: 50px;
+    }
+    #navbar_central ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #navbar_central li{
+        list-style: none;
+        margin: 0 10px;
+    }
+    #navbar_central li a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+
+
+    /* Principal section  */
+
+    #principal_section h2{
+        margin-top: 20px;
+    }
+
+    .group{
+        width: calc(100% / 6); 
+    }
+    .container_music{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .music img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .music h3{
+        margin-bottom: 10px;
+    }
+    .music span{
+        color: #ccc;
+    }
+    .container_music .music{
+        text-align: center;
     }
 
 
@@ -173,8 +243,23 @@ footer{
 
 
 
+    /* Mediaquery  md  */
+    @media all and (max-width:878px){
+        .group{
+            width: calc(100% / 4); 
+        }
+    }
+     
+    /* Mediaquery s  */
+    @media all and (max-width:639px){
+        .group{
+            width: calc(100% / 2); 
+        }
+    }
+
+
 /* Mediaquery telefono */
-@media all and (max-width:380px){
+@media all and (max-width:552px){
     #navbar_left{
         width: 50px;
     }
